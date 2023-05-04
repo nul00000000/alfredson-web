@@ -1,0 +1,169 @@
+@font-face {
+	font-family: comicbook;
+	src: url("../assests/comicbook.otf");
+}
+
+body {
+    background-color: brown;
+    margin: 0;
+}
+
+#container {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    height: 90vh;
+    width: 75vh;
+    transform: translate(-50%, -50%);
+    background-color: white;
+    border: 2px solid black;
+}
+
+#body {
+    position: absolute;
+    top: 5vh;
+    bottom: 5vh;
+    left: 3vh;
+    right: 3vh;
+    border: 2px solid black;
+    font-size: 100%;
+}
+
+#characterType {
+    writing-mode: vertical-rl;
+    text-orientation: mixed;
+    font-family: comicbook;
+    font-size: 5vh;
+    transform: rotate(180deg);
+}
+
+#cardName {
+    position: absolute;
+    top: -2vh;
+    bottom: 73.5vh;
+    left: 6.5vh;
+    right: 6.5vh;
+    border: 2px solid black;
+    background-color: white;
+    text-align: center;
+    font-family: comicbook;
+    font-size: 2.6vh;
+}
+
+#healthBubble {
+    position: absolute;
+    top: -5%;
+    right: -5%;
+    height: 20vh;
+}
+
+#healthBubble div {
+    position: absolute;
+    top: 50%;
+    width: 100%;
+    transform: translate(2%, -70%);
+    text-align: center;
+    font-family: comicbook;
+    font-size: 2.6vh;
+}
+
+#cardHealth {
+    height: 100%;
+}
+
+#cardArt {
+    position: absolute;
+    top: 5vh;
+    bottom: 42vh;
+    left: 7vh;
+    right: 7vh;
+    border: 2px solid black;
+    overflow: hidden;
+}
+
+#cardArt img {
+    width: 100%;
+    height: 100%;
+}
+
+#cardType {
+    position: absolute;
+    top: 14em;
+    bottom: 14.5em;
+    left: 2.4em;
+    right: 2.4em;
+    border: 2px solid black;
+    background-color: white;
+    text-align: center;
+    font-family: comicbook;
+    font-size: 3.3em;
+}
+
+#originStory {
+    position: absolute;
+    top: 18em;
+    left: 0.5em;
+    /* right: 5em; */
+    text-align: left;
+    font-family: comicbook;
+    font-size: 2.9em;
+}
+
+#attack {
+    position: absolute;
+    top: 22em;
+    left: 0.5em;
+    right: 4em;
+    text-align: left;
+    font-family: comicbook;
+    font-size: 2.9em;
+}
+
+#attackDamage {
+    position: absolute;
+    top: 22em;
+    right: 0.5em;
+    text-align: right;
+    font-family: comicbook;
+    font-size: 2.9em;
+    font-weight: bold;
+}
+
+#defense {
+    position: absolute;
+    top: 26em;
+    left: 0.5em;
+    right: 4em;
+    text-align: left;
+    font-family: comicbook;
+    font-size: 2.9em;
+}
+
+#defenseDamage {
+    position: absolute;
+    top: 26em;
+    right: 0.5em;
+    text-align: right;
+    font-family: comicbook;
+    font-size: 2.9em;
+    font-weight: bold;
+}
+
+#special {
+    position: absolute;
+    top: 30em;
+    left: 0.5em;
+    text-align: left;
+    font-family: comicbook;
+    font-size: 2.9em;
+}
+
+#footer {
+    position: absolute;
+    bottom: 0.4em;
+    left: 0%;
+    right: 0;
+    text-align: center;
+    font-family: comicbook;
+    font-size: 2.6vh;
+}

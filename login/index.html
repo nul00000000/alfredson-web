@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel="stylesheet" href="login.css">
+        <script src="login.js"></script>
+        <title>Alfredson Login</title>
+    </head>
+    <body onload="setText()">
+        <div id="accountPanel">
+            <p id="inc_pass" class="accountPanel"></p>
+            <form id="loginPanel" accept-charset=utf-8 action="https://schedge.net/auth/loginpost/" method="post">
+                <input type="email" id="email" class="accountPanel" name="email" autocomplete="on" maxlength="320" placeholder="Email">
+                <input type="password" id="password" class="accountPanel" name="pass" autocomplete="on" maxlength="30" placeholder="Password">
+                <input type="submit" id="loginSubmit" class="accountPanel" value="Login">
+            </form>
+            <form id="createAccountPanel" accept-charset=utf-8 action="https://schedge.net/auth/createpost/" autocomplete="off" method="post" onsubmit="return isFormValid()">
+                <input type="email" id="caemail" class="accountPanel" maxlength="320" name="email" autocomplete="off" placeholder="Email">
+                <input type="password" id="capassword" class="accountPanel" maxlength="60" name="pass" autocomplete="off" placeholder="Password">
+                <input type="password" id="cacpassword" class="accountPanel" maxlength="60" autocomplete="off" placeholder="Confirm Password">
+                <input type="submit" id="caSubmit" class="accountPanel" value="Create Account">
+            </form>
+        </div>
+    </body>
+</html>

@@ -1,0 +1,228 @@
+@font-face {
+	font-family: comicbook;
+	src: url("../assests/comicbook.otf");
+}
+
+:root {
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -o-user-select: none;
+    user-select: none;
+}
+
+body {
+    background-color: brown;
+    margin: 0;
+}
+
+#container {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    height: 90vh;
+    width: 75vh;
+    transform: translate(-50%, -50%);
+    background-color: white;
+    border: 2px solid black;
+    font-family: comicbook;
+}
+
+#enemySide {
+    position: absolute;
+    top: 0;
+    bottom: 50%;
+    left: 0;
+    right: 0;
+    transform: rotate(180deg);
+    font-size: 1em;
+}
+
+#playerSide {
+    position: absolute;
+    top: 50%;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    border-top: 2px solid black;
+    font-size: 1em;
+}
+
+.title {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    text-align: center;
+    font-size: 5em;
+}
+
+.defeatCounter {
+    position: absolute;
+    top: 0;
+    right: 3em;
+    width: 7em;
+    height: 3em;
+    border: 2px solid black;
+    border-top: none;
+    text-align: center;
+    font-size: 2em;
+}
+
+.cardIcon {
+    background-color: lightblue;
+    width: 0.8em;
+    height: 1em;
+    border-radius: 3px;
+    border: 2px solid black;
+}
+
+.defeatCounterCard {
+    display: inline-block;
+    margin-left: -0.6em;
+    transform: translateX(0.3em);
+}
+
+.inPlayContainer {
+    position: absolute;
+    top: 15em;
+    bottom: 10em;
+    left: 20em;
+    right: 20em;
+}
+
+.inPlayCards {
+    position: absolute;
+    top: 0;
+    bottom: 50%;
+    left: 0;
+    right: 0;
+    display: flex;
+	flex-direction: row;
+	justify-content: center;
+	align-items: center;
+	text-align: center;
+}
+
+.cardHP {
+    width: 2em;
+    height: 1.4em;
+    margin-left: auto;
+    margin-right: auto;
+    border: 2px solid black;
+    font-size: 2em;
+}
+
+.cardDisplay {
+    width: 7em;
+    height: 9em;
+    margin: 2.75em;
+    border: 2px solid black;
+}
+
+.modifierCards {
+    position: absolute;
+    top: 50%;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    display: flex;
+	flex-direction: row;
+	justify-content: center;
+	align-items: center;
+	text-align: center;
+}
+
+.modifierDisplay {
+    width: 5em;
+    height: 7em;
+    margin: 0.5em;
+    border: 2px dashed black;
+}
+
+.pile {
+    display: flex;
+    flex-direction: row;
+	justify-content: center;
+	align-items: center;
+    width: 7em;
+    height: 9em;
+    background-color: white;
+    border: 2px solid black;
+    text-align: center;
+}
+
+.pile div {
+    transform: rotate(-45deg);
+}
+
+.discardPile {
+    position: absolute;
+    bottom: 20em;
+    right: 8em;
+}
+
+.discardPile div {
+    font-size: 2em;
+}
+
+.vanquishedPile {
+    position: absolute;
+    bottom: 5em;
+    right: 8em;
+}
+
+.vanquishedPile div {
+    font-size: 1.5em;
+}
+
+.teamPile {
+    position: absolute;
+    bottom: 20em;
+    left: 8em;
+}
+
+.teamPile div {
+    font-size: 3em;
+}
+
+.deckPile {
+    position: absolute;
+    bottom: 5em;
+    left: 8em;
+}
+
+.deckPile div {
+    font-size: 3em;
+}
+
+/* card stuff */
+
+#cardContainer {
+    position: relative;
+    width: 100%;
+    height: 100%;
+}
+
+#cardName {
+    position: absolute;
+    top: 0.5em;
+    bottom: 0.5em;
+    left: 0.5em;
+    right: 0.5em;
+}
+
+#cardArt {
+    position: absolute;
+    top: 3.5em;
+    bottom: 0.5em;
+    left: 0.5em;
+    right: 0.5em;
+    border: 2px solid black;
+    overflow: hidden;
+}
+
+#cardArt img {
+    width: 100%;
+    height: 100%;
+}

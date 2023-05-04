@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel="stylesheet" href="schedge.css">
+        <script src="schedge.js"></script>
+        <title>Alfredson: The Game</title>
+    </head>
+    <body onload="onLoad()">
+        <div id="content">
+            <div id="selector">
+                <button id="leftButton" class="selector" onclick="changeMonth(-1)"><p class="buttonText nomarg">&#60;</p></button>
+                <p id="monthLabel" class="selector">Month Moment</p>
+                <button id="rightButton" class="selector" onclick="changeMonth(1)"><p class="buttonText nomarg">&#62;</p></button>
+            </div>
+            <table id="calender">
+                
+            </table>
+        </div>
+        <div id="adPanel">
+            <p>This is advertising &#x1F60E</p>
+            <a href="https://monke.gay/" target="_blank"><img class="ad" src="/assests/ads/monke.gay.png" alt="there is supposed to be an &quot;ad&quot; here"></a>
+        </div>
+        <div id="infoPanel">
+            <p>Information</p>
+            
+        </div>
+        <template id="tempCell">
+            <p class="nomarg"></p><img class="card" alt="card">
+        </template>
+    </body>
+</html>

@@ -1,0 +1,84 @@
+:root {
+    --x: 0;
+    --y: 0;
+}
+
+body {
+    margin: 0;
+    text-align: center;
+    font-family: Consolas, monaco, monospace; 
+    font-size: 2vh;
+}
+
+#testimonials {
+    position: absolute;
+    top: 15%;
+    bottom: 0%;
+    width: 100%;
+    background-color: lightgrey;
+}
+
+@keyframes test {
+    from {
+        top: 50%;
+        left: 37%;
+    }
+    to {
+        left: var(--x);
+        top: var(--y);
+    }
+}
+
+.testim {
+    position: absolute;
+
+    animation-name: test;
+    animation-duration: 2s;
+    animation-timing-function: ease;
+    animation-fill-mode: forwards;
+}
+
+#header {
+    position: absolute;
+    top: 0%;
+    bottom: 15%;
+    width: 100%;
+    background-color: white;
+}
+
+button.header {
+    margin-top: 7.5vh;
+    margin-right: 1vw;
+    height: 5vw;
+    width: 10vw;
+    transform: translate(0, -50%);
+    background-color: #f7edd9;
+    border: 2px solid black;
+    border-radius: 5px;
+    text-align: center;
+    font-family: Consolas, monaco, monospace; 
+    font-size: 2vw;
+    overflow: hidden;
+    display: block;
+    text-align: center;
+    float: right;
+}
+
+button.header:hover {
+    background-color: #dad1c0;
+}
+
+button.header:active {
+    background-color: #cfc7b7;
+}
+
+#title {
+    margin-top: 7vh;
+    transform: translate(0, -50%);
+    float: left;
+    display: block;
+    color: #968254;
+    font-size: 6vw;
+    font-weight: bold;
+    -webkit-text-stroke: 3px black;
+}

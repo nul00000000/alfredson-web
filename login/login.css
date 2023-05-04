@@ -1,0 +1,102 @@
+body {
+    background-color: #7CCF98;
+}
+
+#accountPanel {
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 10vh;
+    width: 60vh;
+    height: 80vh;
+    background-color: white;
+    border-style: solid;
+    border-radius: 4vh;
+    border-width: 2px;
+    border-color: black;
+    /* padding-top: 1vh; */
+    text-align: center;
+}
+
+.accountPanel {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 1vh;
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 2vh;
+}
+
+#loginPanel {
+    display: block;
+}
+
+#createAccountPanel {
+    display: block;
+    position: relative;
+    top: 7vh;
+}
+
+#profilePanel {
+    display: none;
+}
+
+#level {
+    display: inline-block;
+    margin-right: 1vh;
+}
+
+#inc_pass {
+    position: relative;
+    top: 1vh;
+    margin-top: 0;
+    color:red;
+    visibility: hidden;
+}
+
+#email {
+    width: 50vh;
+    height: 3vh;
+}
+
+#password {
+    width: 50vh;
+    height: 3vh;
+}
+
+#caemail {
+    width: 50vh;
+    height: 3vh;
+}
+
+#causername {
+    width: 50vh;
+    height: 3vh;
+}
+
+#capassword {
+    width: 50vh;
+    height: 3vh;
+}
+
+#cacpassword {
+    width: 50vh;
+    height: 3vh;
+}
+
+#loginSubmit {
+    position: relative;
+    top: 1vh;
+    width: 50vh;
+    height: 3vh;
+}
+
+#caSubmit {
+    position: relative;
+    top: 1vh;
+    width: 50vh;
+    height: 3vh;
+}
+
+#username {
+    font-weight: bold;
+}
