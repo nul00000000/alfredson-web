@@ -1,5 +1,5 @@
-const cardBody = document.getElementById("container");
+const boardBody = document.getElementById("bcontainer");
 
 const resizeObserver = new ResizeObserver(() => {
-    cardBody.style.fontSize = cardBody.offsetHeight / 100 + "px";
-}).observe(cardBody);
+    boardBody.style.fontSize = boardBody.offsetHeight / 100 + "px";
+}).observe(boardBody);

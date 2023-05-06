@@ -8,6 +8,7 @@ body {
     text-align: center;
     font-family: Consolas, monaco, monospace; 
     font-size: 2vh;
+    overflow: hidden;
 }
 
 #testimonials {

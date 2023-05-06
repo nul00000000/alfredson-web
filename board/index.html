@@ -2,10 +2,11 @@
 <html>
     <head>
         <link rel="stylesheet" href="main.css">
+        <link rel="stylesheet" href="../card/main.css">
         <title>Alfredson Card</title>
     </head>
     <body oncontextmenu="return false;" onload="init()">
-        <div id="container">
+        <div id="bcontainer">
             <div id="enemySide">
                 <div class="title">
                     VILLIANS
@@ -85,9 +86,9 @@
                             <div class="cardHP">HP</div>
                             <div class="cardDisplay">
                                 <div id="cardContainer">
-                                    <div id="body">
-                                        <div id="cardName">Calc BC Student</div>
-                                        <div id="cardArt">
+                                    <div id="pbody">
+                                        <div id="pcardName">Calc BC Student</div>
+                                        <div id="pcardArt">
                                             <img src="../assests/schmacomo.png" draggable="false">
                                         </div>
                                     </div>
@@ -122,11 +123,48 @@
                 <div class="pile deckPile"><div>DECK</div></div>
             </div>
         </div>
+        <div id="overlay" onclick="overlayClick()">
+
+        </div>
+        <div id="container">
+            <div id="body">
+                <div id="characterType">V I L L I A N</div>
+                <div id="cardArt">
+                    <img src="../assests/schmacomo.png">
+                </div>
+                <div id="cardName">Calc BC Student</div>
+                <div id="healthBubble">
+                    <img id="cardHealth" src="../assests/speech-bubble.svg">
+                    <div>100HP</div>
+                </div>
+                <div id="cardType">Human</div>
+                <div id="originStory">
+                    ORIGIN STORY: Lorem ipsum dolor sit amet, in Calculo classis nimis diu sedit. I need more text so that I can test this with three lines
+                </div>
+                <div id="attack">
+                    ATTACK: Integral Incinerate - Continuously add infinitesimally small changes in dFire in respect to dt to burn your opponent
+                </div>
+                <div id="attackDamage">
+                    10+C
+                </div>
+                <div id="defense">
+                    DEFENSE: Differentiation Dodge - Compute the slope at a given point in order to slide away from your opponent's attack
+                </div>
+                <div id="defenseDamage">
+                    20
+                </div>
+                <div id="special">
+                    ARCHENEMY BONUS: Diverge Series - Split the comic series into mulitple timelines, one of which you win. I am once again asking for a third line
+                </div>
+            </div>
+            <div id="footer">WORLD'S UNKNOWN HEROES & VILLIANS</div>
+            <script src="layout.js"></script>
+        </div>
         <template id="cardTemplate">
             <div id="cardContainer">
-                <div id="body">
-                    <div id="cardName">Calc BC Student</div>
-                    <div id="cardArt">
+                <div id="pbody">
+                    <div id="pcardName">Calc BC Student</div>
+                    <div id="pcardArt">
                         <img src="../assests/schmacomo.png" draggable="false">
                     </div>
                 </div>
@@ -134,5 +172,6 @@
         </template>
         <script src="main.js"></script>
         <script src="layout.js"></script>
+        <script src="../card/layout.js"></script>
     </body>
 </html>

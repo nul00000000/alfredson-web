@@ -2,7 +2,7 @@ var usedYs: number[] = [];
 
 function validY(y: number): boolean {
     for(let i = 0; i < usedYs.length; i++) {
-        if(Math.abs(y - usedYs[i]) < 0.1) {
+        if(Math.abs(y - usedYs[i]) < 0.05) {
             return false;
         }
     }
@@ -14,8 +14,10 @@ var testimonies = document.querySelectorAll('.testim') as NodeListOf<HTMLParagra
 for(let i = 0; i < testimonies.length; i++) {
     testimonies[i].style.setProperty('--x', (Math.random() * 75 + 5) +'%');
     var temp = Math.random();
-    while(!validY(temp)) {
+    let tries = 0;
+    while(!validY(temp) && tries < 50) {
         temp = Math.random();
+        tries++;
     }
     usedYs.push(temp);
     console.log(temp + " " + testimonies[i].textContent);
